@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Partitions Webpage</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    /* CSS for the partitions */
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        body .nav1 {
+        background-color: #7b2cbf;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start;
+        font-size: 15px;
+        align-items: center;
+        
+
+    }
+    .nav1 a{
+        margin-top: 60px;
+        margin-left: 10px;
+        font-size: 20px;
+        color: #f3f1f5;
+    }
+    .nav1 i{
+        margin-left: 10px;
+        font-size: 20px;
+        color: #f3f1f5;
+    }
+  
+
+    .container {
+        display: flex;
+        height: 1000px;
+    }
+
+  .partition1 {
+        width: 150px;
+        background-color: rgb(244, 215, 255);
+        padding: 20px;
+        margin-top: 150px;
+        height: 600px;
+        position: fixed;
+    }
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #555;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: #555;
+    }
+
+  
+    .partition2 {
+        flex: 1;
+        background-color: rgb(253, 253, 253);
+        padding: 20px;
+        margin-top: 100px;
+        margin-left: 160px;
+
+    }
+
+    .partition2 .cake1{
+    background-color: #f7ebfd;  
+margin-top: 10px;
+margin-left: 20px;
+border-radius: 20px;
+width: 1450px;
+height: 1650px;
+}
+
+.cake1 #h1{
+    top: 10px;
+    font-style: normal;
+    font-size: 50px;
+    border-top: 10px;
+    text-align: center;
+    color: #35065e;
+
+}
+
+.cake1 figcaption{
+   color: #3c1161;
+}
+.cake1 .divCat1{
+    height: 500px;
+    width:450px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: #f3f1f5;
+    box-shadow: 0 0 10px 5px grey;
+    
+}
+
+
+.divCat1  img{
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 380px;
+        width: 430px;
+        border-radius: 20px;
+    }
+    .divCat1  figcaption{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+
+
+}
+
+.divCat1 .star{
+ margin-right: 20px;
+ float: right;
+ margin-bottom: 20px;
+ background-color: green;
+ height: 30px;
+ width: 43px;
+ border-radius: 8px;
+ text-align: center;
+ font-size: 18px;
+ color: #fff;
+}
+body .navbar{
+      margin-left: 1300px;
+    }
+    body .nav2 {
+            background-color: #9d4edd;
+            height: 150px; /* Set the height to 500px */
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 15px;
+            align-items: center;
+            position: fixed;
+        }
+        
+        .nav2 img{
+            height: 60px;
+            width: 60px;
+            margin-top: 40px;
+            margin-left: 20px;
+            border-radius: 50%;
+
+        }
+        .nav2 h1{
+            margin-top: 60px;
+            margin-left: 10px;
+            font-size: 30px;
+            color: #e9ddf3;
+        }
+       .nav2 .cart{
+        height: 60px;
+        width: 60px;
+        margin-top: 40px;
+        margin-left: 500px;
+       }
+        .nav2 .cart i{
+            margin-left: 100px;
+            font-size: 30px;
+            color: #f3f1f5;
+        }
+        .cart h2{
+            color: #fff;
+            margin-left: 99px;
+            margin-top: 3px;
+        }
+
+       .nav2 .cart2{
+        height: 60px;
+        width: 160px;
+        margin-top: 40px;
+        margin-left: 100px;
+       } 
+
+       .nav2 .cart2 i{
+        margin-left: 50px;
+        font-size: 30px;
+        color: #f3f1f5;
+        }
+        .cart2 h2{
+            color: #fff;
+            margin-left: 20px;
+            margin-top: 3px;
+        }
+        .box{
+        
+            width: 500px;
+        
+            height: 50px;
+        
+            background-color: white;
+        
+            border-radius: 30px;
+        
+            display: flex;
+        
+            align-items: center;
+        
+margin-left: 50px;
+margin-top: 40px;        
+        }
+        
+        .box > i {
+        
+            font-size: 20px;
+        margin-left: 10px;
+            color: #777;
+        
+        }
+        
+       .box input{
+        height: 30px;
+        width: 300px;
+        margin-left: 10px;
+        border: #fff;
+
+       }
+
+       .partition1 h3{
+        font-size: 25px;
+        
+
+       }
+
+       .a{
+        font-size: 17px;
+       }
+</style>
+</head>
+<body>
+ 
+
+<div class="nav2">
+        <img src="shop.webp">
+        <h1>The Chef's Cake</h1>
+        <div class="box">
+    
+            <i class="fa fa-search" aria-hidden="true"></i>
+        
+            <input type="text" name="">
+    
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>    
+            <h2>Cart</h2>
+        </div>
+        <div class="cart2">
+            <i class="fa-solid fa-user"></i>
+            <h2>Hi Guest</h2>
+        </div>
+    
+    </div>
+
+    <div class="nav1">
+        <div class="navbar">
+            <div class="middles">
+                <a href="#abtus">About Us</a>
+                <a href="login.html" target="_blank">LogIn</a>
+                <a href="#cntct">Contact us</a>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        
+    </div>
+    </div>
+
+
+<div class="container">
+    <div class="partition1">
+    <h1>Filter</h1>
+    <h3>Price</h3>
+    <input type = "checkbox"><a class="a">₹0 TO ₹499</a> <br>  
+    <input type = "checkbox"><a class="a">₹500 TO ₹999   </a> <br>
+    <input type = "checkbox"><a class="a">₹1000 TO ₹1499 </a>   <br>
+    <input type = "checkbox"><a class="a">₹1500 TO ₹1999</a>   <br>
+
+    <h3>Weight</h3>
+    <input type = "checkbox"><a class="a">1/2 Kg</a> <br>  
+    <input type = "checkbox"><a class="a">1 Kg   </a> <br>
+    <input type = "checkbox"><a class="a">1.5 Kg </a>   <br>
+    <input type = "checkbox"><a class="a">2 Kg</a>   <br>
+
+
+    </div>
+    <div class="partition2">
+        <div class="cake1">
+            <h1 id="h1">Red Velvet Cakes</h1>
+        
+            
+            <div class="divCat1">
+                <img src="r2.jpg">
+                <figcaption>Decadent Dark Chocolate Truffle Cake<br>₹799 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.7★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r3.webp">
+                <figcaption>Rich Belgian Chocolate Mousse Cake<br>₹999 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.9★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r4.webp">
+                <figcaption>Luxurious Chocolate Raspberry Velvet Cake<br>₹1299 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.9★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r1.jpeg">
+                <figcaption>Classic Chocolate Fudge Cake<br>₹899 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.8★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r5.jpg">
+                <figcaption>Gooey Chocolate Caramel Delight Cake<br>₹799 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.7★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r6.jpeg">
+                <figcaption>Indulgent Chocolate Peanut Butter Cup Cake<br>₹1599 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.8★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r7.jpg">
+                <figcaption>Dreamy Chocolate Coconut Cream Cake<br>₹1799 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.9★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="r8.webp">
+                <figcaption>Velvety Chocolate Hazelnut Cake<br>₹599 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.6★</figcaption>
+            </div>
+            
+            <div class="divCat1">
+                <img src="Red_Velvet_Cake_03.webp">
+                <figcaption>Classic Red Velvet Cake<br>₹699 <br> Earliest Delivery: Today </figcaption>
+                <figcaption class="star">4.5★</figcaption>
+            </div>
+            
+       
+          </div>
+</div>
+
+</body>
+</html>

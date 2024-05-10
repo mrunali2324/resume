@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ORDERS
+        </title>
+        <style>
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #614caf;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #6e45a0;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">ADDRESS:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="type">Cake type:</label>
+            <input type="text" id="ntype" name="ntype" required>
+
+            <label for="number">Cake number:</label>
+            <input type="text" id="number" name="number" required>
+            
+            <h3>Enter the payment mode</h3>
+            <input type="radio" name="cod" value="cod">Cash On Delivery
+            <input type="radio" name="Online" value="online">Online mode
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
